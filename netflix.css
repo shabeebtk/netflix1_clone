@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+}
+
+body{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.bg_image{
+    background: rgba(0,0,0,.4);
+    background-image:
+            linear-gradient(0deg,
+              rgba(0,0,0,.8), 0,
+              transparent 10%,
+              rgba(0,0,0,.8)),
+
+              linear-gradient(180deg,
+              rgba(0,0,0,.8), 0,
+              transparent 10%,
+              rgba(0,0,0,.8)), url(
+'https://assets.nflxext.com/ffe/siteui/vlv3/7cee2527-d2cc-4cc9-99f6-d1375e72d46e/eb83fa55-ab10-476a-b103-499eb7c6e022/IN-en-20230103-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+background-size: cover;
+}
+
+.img{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png);
+}
+
+.expandable {
+    background: #fff;
+    overflow: hidden;
+    color: #000;   
+    line-height: 50px;
+  
+    transition: all .5s ease-in-out;
+    height: 0;
+   }
+   
+   .expandable:target {
+    height: 100px;
+  }
+   
+
+.rotate {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.rotate.down {
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+}

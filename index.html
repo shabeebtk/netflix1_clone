@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="netflix.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="netflix.js" type="text/javascript"></script>
+</head>
+<body class="">
+
+    <!-- ------header---- -->
+   <div class="bg_image max-[750px]:pb-[10vh] md:h-screen border border-b-[8px] border-[#222]">
+    <div class="grid grid-cols-12 pl-[6vh] max-[750px]:px-[1vh] h-[vh] flex items-center">
+
+        <!-- --------logo------------ -->
+        <div class="netflix_logo w-[25vh] col-span-8 max-[750px]:col-span-6 max-[750px]:w-[15vh]">
+            <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="">
+        </div>
+        <!-- -----language-btn----- -->
+        <div class="col-span-2 max-[750px]:col-span-3 ">
+        <button data-dropdown-toggle='dropdown' id="dropdownDefaultButton" class="text-white border bg-black
+            font-medium px-2 py-2.5 text-center inline-flex items-center" type="button"">English
+            <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        </div>
+
+        <!-- -----signin btn----- -->
+        <div class="max-[750px]:col-span-3">
+            <button class="rounded text-white bg-red-600 text-md px-4 py-2 text-center" type="button"">Signin</button>
+        </div>
+        
+    </div>
+
+    <!-- -----------text--area------ -->
+    <div class="grid grid-cols-12 h-[50vh] flex justify-center text-white">
+        <div class="col-span-3 max-[750px]:col-span-1"></div>
+        <div class="col-span-6 max-[750px]:col-span-10 text-center pt-[13vh]">
+            <div>
+                <h1 class="text-5xl max-[750px]:text-3xl font-bold">Unlimited movies, TV <br> shows and more.</h1>
+            </div>
+            <br>
+            <div>
+                <h1 class="text-3xl max-[750px]:text-2xl font-medium">Watch anywhere. Cancel anytime.</h1>
+            </div>
+            <br>
+            <div>
+                <h1 class="text-xl max-[750px]:text-lg">Ready to watch? Enter your email to create or restart your membership.</h1>
+            </div>
+            <br>
+            <!-- --------input email------- -->
+            <div class="relative w-full ">
+                <input type="search" id="search-dropdown" class="h-[10vh] max-[750px]:h-[5vh]  w-[100%] block p-2.5 w-full z-20 text-sm text-gray-900 bg-white border-l-2 border focus:ring-blue-500 focus:border-blue-500" placeholder="Email Address" required>
+                <button type="submit" class="h-[10vh] max-[750px]:h-[5vh] w-[] absolute top-0 right-0 p-2.5 text-2xl max-[750px]:text-sm text-white bg-red-700 border border-red-700 focus:ring-4 focus:outline-none">Get Started</button>
+            </div>
+        </div>
+        <div class="col-span-3 max-[750px]:col-span-1"></div>
+    </div>
+   </div>
+
+   <!-- ------second section-------- -->
+   <div class="h-full bg-black grid grid-cols-2 text-white p-[7%] flex items-center gap-x-[5vh] border-b-[8px] border-[#222]
+               max-[750px]:space-y-6">
+    <div class="md:space-y-6 
+                max-[750px]:col-span-2 max-[750px]:text-center max-[750px]:space-y-2">
+        <div class="max-[750px]:text-2xl text-5xl font-bold">Enjoy on your TV.</div> 
+        <div class="max-[750px]:text-lg text-xl font-medium">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</div>
+    </div>
+
+    <div class="max-[750px]:col-span-2">
+        <video class="our-story-card-video" data-uia="our-story-card-video" autoplay playsinline
+muted loop>
+<source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video
+-tv-in-0819.m4v" type="video/mp4">
+</video>
+    </div> 
+   </div>
+
+   <!-- ------third-----section------ -->
+
+   <div class="h-full bg-black grid grid-cols-2 text-white p-[3%] flex items-center gap-x-[5vh] border-b-[8px] border-[#222]
+               max-[750px]:flex max-[750px]:flex-col-reverse ">
+    <div class="max-[750px]:col-span-2">
+        <img src="./images/st4.png" alt="">
+    </div> 
+    <div class="space-y-6 max-[750px]:col-span-2 max-[750px]:col-start-1
+                max-[750px]:col-span-2 max-[750px]:text-center max-[750px]:space-y-2">
+        <div class="max-[750px]:text-2xl text-5xl font-bold">Download your shows to watch offline.</div> 
+        <div class="max-[750px]:text-lg text-xl font-medium">Save your favourites easily and always have something to watch.</div>
+    </div>
+   </div>
+
+   <!-- ---------fourth section------- -->
+
+   <div class="h-full bg-black grid grid-cols-2 text-white p-[4%] flex items-center gap-x-[5vh] border-b-[8px] border-[#222]
+               max-[750px]:space-y-6">
+
+    <div class="space-y-6
+                max-[750px]:col-span-2 max-[750px]:text-center max-[750px]:space-y-2">
+        <div class="max-[750px]:text-2xl text-5xl font-bold">Watch everywhere.</div> 
+        <div class="max-[750px]:text-lg text-xl font-medium">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</div>
+    </div>
+    <div class="max-[750px]:col-span-2">
+        <img src="./images/watch.png" alt="">
+    </div> 
+   </div>
+
+   <!-- ----------5th section----------- -->
+
+   <div class="h-full bg-black grid grid-cols-2 text-white p-[5%] flex items-center gap-x-[5vh] border-b-[8px] border-[#222]
+               max-[750px]:flex max-[750px]:flex-col-reverse ">
+    <div class="max-[750px]:col-span-2">
+        <img src="https://occ-0-2218-360.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABYjXrxZKtrzxQRVQNn2aIByoomnlbXmJ-uBy7du8a5Si3xqIsgerTlwJZG1vMpqer2kvcILy0UJQnjfRUQ5cEr7gQlYqXfxUg7bz.png?r=420" alt="">
+    </div> 
+    <div class="space-y-6 max-[750px]:col-span-2 max-[750px]:text-center max-[750px]:space-y-2">
+        <div class="max-[750px]:text-2xl text-5xl font-bold">Create profiles for children.</div> 
+        <div class="max-[750px]:text-lg text-xl font-medium">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</div>
+    </div>
+   </div>
+
+
+   <!-- ----------frequently asked questions---------- -->
+
+   <div class="bg-black text-white text-center text-5xl max-[750px]:text-2xl p-[4%] font-bold">
+    <div>Frequently Asked Questions</div>
+   </div>
+   <!-- ----------frequently asked questions list---------- -->
+   <div class="flex justify-center pb-[10vh] grid grid-cols-6 bg-black text-white">
+    <div class="sample_grid_1"></div>
+    <div class="col-span-4 max-[750px]:col-span-8 max-[750px]:px-4">
+        <ul class="space-y-2">        
+            <!-- 1 What is Netflix? -->
+            <li id="" class="toggle_btn1 bg-[#303030] space-x-2 cursor-pointer py-[4vh] max-[750px]:py-[2vh] px-[2em] max-[750px]:px-[1em] items-center text-2xl flex justify-between ">
+                <button>What is Netflix?</button>
+                <img id="rotate1" class="rotate h-[1em]" src="./images/plus.png" alt="">
+            </li>
+            <div id="" class="toggle_div1 hidden bg-[#303030] p-[3%] text-2xl">
+                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices. 
+            <br><br>
+            You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
+            </div>
+
+            <!-- 2 How much does Netflix cost? -->
+            <li id="" class="toggle_btn2 bg-[#303030] space-x-4 cursor-pointer py-[4vh] max-[750px]:py-[2vh] px-[2em] max-[750px]:px-[1em] items-center text-2xl flex justify-between">
+                <button>How much does Netflix cost?</button>
+                <img id="rotate2" class="rotate h-[1em]" src="./images/plus.png" alt="">
+            </li>
+            <div id="" class="toggle_div2 hidden bg-[#303030] p-[3%] text-2xl">
+                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+            </div>
+
+            <!-- 3 Where can I watch? -->
+            <li id="" class="toggle_btn3 bg-[#303030] cursor-pointer py-[4vh] max-[750px]:py-[2vh] px-[2em] max-[750px]:px-[1em] items-center text-2xl flex justify-between">
+                <button>Where can I watch?</button>
+                <img id="rotate3" class="rotate h-[1em]" src="./images/plus.png" alt="">
+            </li>
+            <div id="" class="toggle_div3 hidden bg-[#303030] p-[3%] text-2xl">
+                Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. <br><br>
+                You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+            </div>
+
+            <!-- 4 How do I cancel? -->
+            <li id="" class="toggle_btn4 bg-[#303030] cursor-pointer py-[4vh] max-[750px]:py-[2vh] px-[2em] max-[750px]:px-[1em] items-center text-2xl flex justify-between">
+                <button>How do I cancel?</button>
+                <img id="rotate4" class="rotate h-[1em]" src="./images/plus.png" alt="">
+            </li>
+            <div id="" class="toggle_div4 hidden bg-[#303030] p-[3%] text-2xl">
+                Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+              </div>
+
+              <!-- 5 What can I watch on Netflix? -->
+            <li id="" class="toggle_btn5 bg-[#303030] cursor-pointer py-[4vh] max-[750px]:py-[2vh] px-[2em] max-[750px]:px-[1em] items-center text-2xl flex justify-between">
+                <button>What can I watch on Netflix?</button>
+                <img id="rotate5" class="rotate h-[1em]" src="./images/plus.png" alt="">
+            </li>
+            <div id="" class="toggle_div5 hidden bg-[#303030] p-[3%] text-2xl">
+                Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+              </div>
+
+              <!-- 6 Is Netflix good for kids? -->
+            <li id="" class="toggle_btn6 bg-[#303030] cursor-pointer py-[4vh] max-[750px]:py-[2vh] px-[2em] max-[750px]:px-[1em] items-center text-2xl flex justify-between">
+                <button>Is Netflix good for kids?</button>
+                <img id="rotate6" class="rotate h-[1em]" src="./images/plus.png" alt="">
+            </li>
+            <div id="" class="toggle_div6 hidden bg-[#303030] p-[3%] text-2xl">
+                The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space. 
+                <br><br>
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+            </div>
+        </ul>
+
+    </div>
+    <div class="sample_grid_2"></div>
+    <br><br>
+</div>
+
+<!-- ------ register input ---- -->
+<div class="bg-black text-white">
+    <h1 class="text-xl text-center px-4">Ready to watch? Enter your email to create or restart your membership.</h1>
+</div>
+<!-- -----------input----------- -->
+<div class="grid grid-cols-12 bg-black pt-[5vh] pb-[10vh] border-b-[8px] border-[#222]">
+    <div class="col-span-3 max-[750px]:col-span-1"></div>
+    <div class="col-span-6 max-[750px]:col-span-10">
+        <div class="relative w-full">
+            <input type="search" id="search-dropdown" class="h-[10vh] max-[750px]:h-[5vh] w-[100%] block p-2.5 w-full z-20 text-sm text-gray-900 bg-white border-l-2 border focus:ring-blue-500 focus:border-blue-500" placeholder="Email Address" required>
+            <button type="submit" class="h-[10vh] max-[750px]:h-[5vh] max-[750px]:text-sm absolute top-0 right-0 p-2.5 text-2xl text-white bg-red-700 border border-red-700 focus:ring-4 focus:outline-none">Get Started</button>
+        </div>
+    </div>
+    <div class="max-[750px]:col-span-1"></div>
+</div>
+
+<!-- ------------footer------------- -->
+
+<div class="grid grid-cols-12  bg-black text-[#737373] py-[5vh]">
+    <div class="col-span-2 grid_sample"></div>
+    <div class="col-span-8 py-[10vh]">
+        <div class="">Questions? Call 000-800-919-1694</div>
+
+        <!-- -------footer links---------- -->
+        <div class="grid grid-cols-4 max-[750px]:grid-cols-2 space-y-2 pt-[5vh]">
+            <div><a class="text-sm" href="">FAQ</a></div>
+            <div><a class="text-sm" href="">Help Centre</a></div>
+            <div><a class="text-sm" href="">Account</a></div>
+            <div><a class="text-sm" href="">Media Centre</a></div>
+            <div><a class="text-sm" href="">Investor Relations</a></div>
+            <div><a class="text-sm" href="">Jobs</a></div>
+            <div><a class="text-sm" href="">Ways to Watch</a></div>
+            <div><a class="text-sm" href="">Terms of Use</a></div>
+            <div><a class="text-sm" href="">Privacy</a></div>
+            <div><a class="text-sm" href="">Cookie Preferences</a></div>
+            <div><a class="text-sm" href="">Corporate Information</a></div>
+            <div><a class="text-sm" href="">Contact Us</a></div>
+            <div><a class="text-sm" href="">Speed Test</a></div>
+            <div><a class="text-sm" href="">Legal Notices</a></div>
+            <div><a class="text-sm" href="">Only on Netflix</a></div> 
+        </div>
+
+        <!-- -------------language btn--------- -->
+        <div class="pt-[4vh]">
+            <button data-dropdown-toggle='dropdown' id="dropdownDefaultButton" class="text-white border bg-black
+            font-medium px-4 py-2.5 text-center inline-flex items-center" type="button"">English
+            <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </button>
+        </div>
+        <div class="text-sm pt-[3vh]">Netflix India</div>
+
+
+
+    </div>
+    <div class="col-span-2 grid_sample"></div>
+
+</div>
+
+
+    
+
+
+
+
+
+<script>
+    // ----- list slide effect-------
+    $(".toggle_btn1").click(function(){
+    $(this).next(".toggle_div1").slideToggle(300);
+    $("#rotate1").toggleClass("down");
+});
+
+$(".toggle_btn2").click(function(){
+    $(this).next(".toggle_div2").slideToggle(300);
+    $("#rotate2").toggleClass("down");
+});
+
+$(".toggle_btn3").click(function(){
+    $(this).next(".toggle_div3").slideToggle(300);
+    $("#rotate3").toggleClass("down");
+});
+
+$(".toggle_btn4").click(function(){
+    $(this).next(".toggle_div4").slideToggle(300);
+    $("#rotate4").toggleClass("down");
+});
+
+$(".toggle_btn5").click(function(){
+    $(this).next(".toggle_div5").slideToggle(300);
+    $("#rotate5").toggleClass("down");
+});
+
+$(".toggle_btn6").click(function(){
+    $(this).next(".toggle_div6").slideToggle(300);
+    $("#rotate6").toggleClass("down");
+});
+// ---------------------------------------------
+
+</script>
+<script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+</body>
+</html>
